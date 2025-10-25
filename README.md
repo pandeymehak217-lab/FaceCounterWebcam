@@ -1,39 +1,51 @@
-# FaceCounterWebcam
+# 👤 FaceCounterWebcam
 
-**Real-Time Human Face Detection using Python, OpenCV, and Deep Learning**
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?logo=opencv&logoColor=white)
 
----
-
-## Project Overview
-
-This project demonstrates a **real-time human face detection system** using **Python**, **OpenCV**, and a **Deep Learning-based DNN model (SSD + Caffe)**. Unlike traditional Haar cascades, this model detects **only human faces** with higher accuracy, reducing false positives. The system works with your **webcam** and displays a **live face count**.
+A real-time human face detection system using Python, OpenCV, and a Deep Learning-based DNN model (SSD + Caffe).  
+Unlike traditional Haar cascades, this model detects only human faces with higher accuracy, reducing false positives.  
+The system works with your webcam and displays a live face count.
 
 ---
 
-## Features
+## 📌 Project Overview
 
-- Real-time **human face detection** using webcam
-- Uses **OpenCV DNN module** with a pre-trained **Caffe model**
-- Displays **number of faces detected** on screen
-- Automatically installs missing Python modules (`opencv-python`, `numpy`)
-- Lightweight and easy to run on **Mac, Windows, and Linux**
+This project demonstrates:
+
+- Real-time human face detection using a Deep Learning-based DNN model (SSD + Caffe)  
+- Higher accuracy in detecting human faces compared to traditional Haar cascades  
+- Live face count display using your webcam  
+
+Ideal for applications requiring real-time face detection and counting.
 
 ---
 
-## Technologies Used
+## ⚙️ Requirements
 
 - **Python 3.x**  
-- **OpenCV (DNN module)**  
+- **OpenCV**  
 - **NumPy**  
-- **Caffe Pre-trained Model** (`res10_300x300_ssd_iter_140000.caffemodel`)  
-- **Visual Studio / VS Code** (optional)
 
----
-
-## Installation & Usage
-
-1. Clone or download the repository:
+Install dependencies using pip:
 
 ```bash
-git clone https://github.com/<your-username>/FaceCounterWebcam.git
+pip install opencv-python numpy
+🛠️ Setup & Usage
+Clone the repository:
+git clone https://github.com/pandeymehak217-lab/FaceCounterWebcam.git
 cd FaceCounterWebcam
+Download the pre-trained SSD model:
+Download the model files from the OpenCV GitHub repository and place them in the project directory.
+Run the script:
+python face_counter.py
+Controls:
+Press q to exit the webcam feed.
+📂 Repository Structure
+FaceCounterWebcam/
+├─ face_counter.py                              # Main script to process webcam feed
+├─ deploy.prototxt                              # Caffe model configuration file
+├─ res10_300x300_ssd_iter_140000_fp16.caffemodel # Pre-trained model weights
+├─ README.md                                    # Project documentation
+🔗 About
+This project showcases the application of Deep Learning-based face detection using OpenCV's DNN module.
+By leveraging a pre-trained SSD model with Caffe, it provides accurate and efficient real-time face detection.
