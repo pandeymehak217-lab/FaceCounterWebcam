@@ -42,10 +42,10 @@ Controls:
 Press q to exit the webcam feed.
 📂 Repository Structure
 FaceCounterWebcam/
-├─ face_counter.py                              # Main script to process webcam feed
-├─ deploy.prototxt                              # Caffe model configuration file
-├─ res10_300x300_ssd_iter_140000_fp16.caffemodel # Pre-trained model weights
-├─ README.md                                    # Project documentation
+├─ face_counter.py                              
+├─ deploy.prototxt                              
+├─ res10_300x300_ssd_iter_140000_fp16.caffemodel 
+├─ README.md                                    
 🔗 About
 This project showcases the application of Deep Learning-based face detection using OpenCV's DNN module.
 By leveraging a pre-trained SSD model with Caffe, it provides accurate and efficient real-time face detection.
